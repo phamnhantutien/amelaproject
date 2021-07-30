@@ -54,13 +54,11 @@
             <!-- Right navbar links -->
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item d-none d-sm-inline-block">
-                    {{-- <a href="{{ route('admin.showlogin') }}" class="nav-link">Đăng nhập</a> --}}
-                    <a href="#" class="nav-link">Đăng nhập</a>
+                    <a href="{{ route('admin.showlogin') }}" class="nav-link">Đăng nhập</a>
                 </li>
                 @if(Session::has('login') && Session::get('login'))
                     <li class="nav-item d-none d-sm-inline-block">
-                        {{-- <a href="{{ route('admin.logout') }}" class="nav-link">Thoát</a> --}}
-                        <a href="#" class="nav-link">Thoát</a>
+                        <a href="{{ route('admin.logout') }}" class="nav-link">Thoát</a>
                     </li>
                 @endif
             </ul>
